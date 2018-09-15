@@ -4,11 +4,7 @@
 # vertex onto the plane, then display the points (and eventually lines between them)
 
 import numpy as np
-import math
 import matplotlib.pyplot as plt
-from pynput import keyboard
-import time
-import copy
 import stl
 import sys
 
@@ -220,7 +216,7 @@ def render(file):
 
     mean = avg.mean(axis=0)
 
-    r = Renderer(vecs[:,0] * 1.5 * max, mean, np.array([0, 0, 1]), np.pi / 2)
+    r = Renderer(vecs[:,0] * 1.8 * max + np.array([0,0,5]), mean, np.array([0, 0, 1]), np.pi / 2)
 
     for polygon in mesh.vectors:
         r.addTriangle(polygon[0], polygon[1], polygon[2])
