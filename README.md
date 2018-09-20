@@ -12,7 +12,7 @@ To run the script, simple clone the repository and run
 python render.py [myfile.stl]
 ```
 
-where myfile.stl is your favorite binary stl file. The library provides an example teapot stl file in the examples folder, so you can run
+where myfile.stl is your favorite stl file. The library provides an example teapot stl file in the examples folder, so you can run
 
 ```
 python render.py examples/teapot.stl
